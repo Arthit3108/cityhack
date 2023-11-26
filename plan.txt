@@ -1,0 +1,37 @@
+pack multer -- upload image
+pack fs 
+name="image" in ejs --> .single("image")
+update image
+name="old-image"
+
+map-> node-geocoder
+
+
+
+(after)
+/seller/id/update-info
+-> update from id
+-> update page addProduct can upload image of food (doing)
+    cannot upload image to folder
+
+
+
+
+/seller/id/mange-product
+-> send user object that find() when render to use in ejs
+-> check store name of product with store of id of route
+-> loop show object that find
+
+/seller/id-seller/update-product/id-product
+-> check storename from id-seller match with storename from id-product
+-> edit pass _id of product
+
+/seller/id-seller/delete-product/id-product
+-> check storename from id-seller match with storename from id-product
+-> edit pass _id of product
+-> delete image in folder
+
+/buyer/display-product/id
+-> check location of buyer and seller length
+-> $near search product to display
+-> loop show object that find
